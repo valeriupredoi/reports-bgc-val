@@ -4,6 +4,10 @@ Repository that contains HTML reports and plots from BGCVal 2.0
 BGCVal 2.0beta00
 ================
 
+- [Source - temporary fork](https://github.com/valeriupredoi/bgc-val)
+- Python 3.9
+- modern conda/mamba [environment](https://github.com/valeriupredoi/bgc-val/blob/main/environment.yml)
+- full integration with Python 3.9-upgraded auxiliary packages (eg netcdf manipulator by Lee)
 
 How to view `index.html` pages
 ==============================
