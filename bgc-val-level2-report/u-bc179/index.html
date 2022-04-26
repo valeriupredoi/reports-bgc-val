@@ -1,0 +1,5975 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Edited for UKESM BGC validation by Lee de Mora
+-->
+<html>
+	<head>
+		<title>UKESM Biogeochemical Validation suite</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">BGC-Val</h1>
+							<p>UKESM Biogeochemical Validation suite</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+
+
+
+								
+
+							  <li><a href="#level0-table" id="level0-table-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Level 0</span></a></li>
+
+							  <li><a href="#L1TotalIntegratedPrimaryProduction-global" id="L1TotalIntegratedPrimaryProduction-global-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Level 1</span></a></li>
+
+								<ul>
+
+								<li><a href="#L1TotalIntegratedPrimaryProduction-global" id="L1TotalIntegratedPrimaryProduction-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Total Integrated Primary Production</span></a></li>
+
+								<li><a href="#L1ExportRatio-global" id="L1ExportRatio-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Export Ratio</span></a></li>
+
+								<li><a href="#L1AirSeaFluxCO2-global" id="L1AirSeaFluxCO2-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Air Sea CO2 Flux</span></a></li>
+
+								<li><a href="#L1Nitrate-global" id="L1Nitrate-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Nitrate</span></a></li>
+
+								<li><a href="#L1DIC-global" id="L1DIC-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">DIC</span></a></li>
+
+								<li><a href="#L1pH-global" id="L1pH-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">pH</span></a></li>
+
+								<li><a href="#L1Alkalinity-global" id="L1Alkalinity-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Alkalinity</span></a></li>
+
+								<li><a href="#L1Chlorophyll-global" id="L1Chlorophyll-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll</span></a></li>
+
+								<li><a href="#L1Chlorophyll_cci-global" id="L1Chlorophyll_cci-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll (CCI)</span></a></li>
+
+								<li><a href="#L1DiaFrac-global" id="L1DiaFrac-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Diatom Fraction</span></a></li>
+
+								<li><a href="#L1TotalDust-global" id="L1TotalDust-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Total Dust</span></a></li>
+
+								<li><a href="#L1TotalOMZVolume-global" id="L1TotalOMZVolume-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Total Oxygen minimum zone volume (<20 mmol O2/m^3)</span></a></li>
+
+								<li><a href="#L1Temperature-global" id="L1Temperature-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Temperature</span></a></li>
+
+								<li><a href="#L1GlobalMeanTemperature-global" id="L1GlobalMeanTemperature-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Global Volume-weighted Mean Temperature</span></a></li>
+
+								<li><a href="#L1IcelessMeanSST-global" id="L1IcelessMeanSST-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">IcelessMeanSST</span></a></li>
+
+								<li><a href="#L1Salinity-global" id="L1Salinity-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Salinity</span></a></li>
+
+								<li><a href="#L1GlobalMeanSalinity-global" id="L1GlobalMeanSalinity-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Global Volume-weighted Mean Salinity</span></a></li>
+
+								<li><a href="#L1TotalIceArea-global" id="L1TotalIceArea-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Total Ice Area</span></a></li>
+
+								<li><a href="#L1TotalIceExtent-global" id="L1TotalIceExtent-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Total Ice Extent</span></a></li>
+
+								<li><a href="#L1DrakePassageTransport-global" id="L1DrakePassageTransport-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Drake Passage Transport</span></a></li>
+
+								<li><a href="#L1AMOC_26N-global" id="L1AMOC_26N-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">AMOC 26N</span></a></li>
+
+								<li><a href="#L1ADRC_26N-global" id="L1ADRC_26N-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Atlantic Deep Return Current at 26N</span></a></li>
+
+								<li><a href="#L1ZonalCurrent-global" id="L1ZonalCurrent-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Zonal Current</span></a></li>
+
+								<li><a href="#L1MeridionalCurrent-global" id="L1MeridionalCurrent-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Meridional Current</span></a></li>
+
+								<li><a href="#L1VerticalCurrent-global" id="L1VerticalCurrent-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Vertical Current</span></a></li>
+
+								<li><a href="#L1MLD-global" id="L1MLD-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Mixed Layer Depth</span></a></li>
+
+								<li><a href="#L1MaxMonthlyMLD-global" id="L1MaxMonthlyMLD-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Annual Maximum Mixed Layer Depth</span></a></li>
+
+								<li><a href="#L1MinMonthlyMLD-global" id="L1MinMonthlyMLD-global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Annual Minimum Mixed Layer Depth</span></a></li>
+
+								</ul>
+
+							  <li><a href="#L1regionAirSeaFluxCO2" id="L1regionAirSeaFluxCO2-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Level 1 - regional</span></a></li>
+
+								<ul>
+
+								<li><a href="#L1regionAirSeaFluxCO2" id="L1regionAirSeaFluxCO2-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Air Sea CO2 Flux</span></a></li>
+
+								<li><a href="#L1regionNitrate" id="L1regionNitrate-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Nitrate</span></a></li>
+
+								<li><a href="#L1regionSilicate" id="L1regionSilicate-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Silicate</span></a></li>
+
+								<li><a href="#L1regionIron" id="L1regionIron-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Iron</span></a></li>
+
+								<li><a href="#L1regionIntegratedPrimaryProduction_OSU" id="L1regionIntegratedPrimaryProduction_OSU-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Integrated Primary Production (OSU)</span></a></li>
+
+								<li><a href="#L1regionChlorophyll" id="L1regionChlorophyll-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll</span></a></li>
+
+								<li><a href="#L1regionChlorophyll_cci" id="L1regionChlorophyll_cci-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll (CCI)</span></a></li>
+
+								<li><a href="#L1regionpH" id="L1regionpH-link" class="skel-layers-ignoreHref"><span class="icon fa-square">pH</span></a></li>
+
+								<li><a href="#L1regionDiaFrac" id="L1regionDiaFrac-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Diatom Fraction</span></a></li>
+
+								<li><a href="#L1regionDust" id="L1regionDust-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Dust</span></a></li>
+
+								<li><a href="#L1regionOMZThickness" id="L1regionOMZThickness-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Oxygen minimum zone thickness (<20 mmol O2/m^3)</span></a></li>
+
+								<li><a href="#L1regionOMZMeanDepth" id="L1regionOMZMeanDepth-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Oxygen minimum zone mean depth (<20 mmol O2/m^3)</span></a></li>
+
+								<li><a href="#L1regionTemperature" id="L1regionTemperature-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Temperature</span></a></li>
+
+								<li><a href="#L1regionSalinity" id="L1regionSalinity-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Salinity</span></a></li>
+
+								<li><a href="#L1regionZonalCurrent" id="L1regionZonalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Zonal Current</span></a></li>
+
+								<li><a href="#L1regionMeridionalCurrent" id="L1regionMeridionalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Meridional Current</span></a></li>
+
+								<li><a href="#L1regionVerticalCurrent" id="L1regionVerticalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Vertical Current</span></a></li>
+
+								<li><a href="#L1regionMaxMonthlyMLD" id="L1regionMaxMonthlyMLD-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Annual Maximum Mixed Layer Depth</span></a></li>
+
+								<li><a href="#L1regionMinMonthlyMLD" id="L1regionMinMonthlyMLD-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Annual Minimum Mixed Layer Depth</span></a></li>
+
+								</ul>
+
+							  <li><a href="#L1profile-Nitrate" id="L1profile-Nitrate-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Level 1 - Profiles</span></a></li>
+
+								<ul>
+
+								<li><a href="#L1profile-Nitrate" id="L1profile-Nitrate-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Nitrate</span></a></li>
+
+								<li><a href="#L1profile-Silicate" id="L1profile-Silicate-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Silicate</span></a></li>
+
+								<li><a href="#L1profile-Iron" id="L1profile-Iron-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Iron</span></a></li>
+
+								<li><a href="#L1profile-DIC" id="L1profile-DIC-link" class="skel-layers-ignoreHref"><span class="icon fa-square">DIC</span></a></li>
+
+								<li><a href="#L1profile-Chlorophyll" id="L1profile-Chlorophyll-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll</span></a></li>
+
+								<li><a href="#L1profile-pH" id="L1profile-pH-link" class="skel-layers-ignoreHref"><span class="icon fa-square">pH</span></a></li>
+
+								<li><a href="#L1profile-Alkalinity" id="L1profile-Alkalinity-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Alkalinity</span></a></li>
+
+								<li><a href="#L1profile-Oxygen" id="L1profile-Oxygen-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Oxygen</span></a></li>
+
+								<li><a href="#L1profile-Temperature" id="L1profile-Temperature-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Temperature</span></a></li>
+
+								<li><a href="#L1profile-Salinity" id="L1profile-Salinity-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Salinity</span></a></li>
+
+								<li><a href="#L1profile-ZonalCurrent" id="L1profile-ZonalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Zonal Current</span></a></li>
+
+								<li><a href="#L1profile-MeridionalCurrent" id="L1profile-MeridionalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Meridional Current</span></a></li>
+
+								<li><a href="#L1profile-VerticalCurrent" id="L1profile-VerticalCurrent-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Vertical Current</span></a></li>
+
+								</ul>
+
+							  <li><a href="#l2-Nitrate-Global" id="l2-Nitrate-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Level 2</span></a></li>
+
+								<ul>
+
+								<li><a href="#l2-Nitrate-Global" id="l2-Nitrate-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Nitrate</span></a></li>
+
+								<li><a href="#l2-Silicate-Global" id="l2-Silicate-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Silicate</span></a></li>
+
+								<li><a href="#l2-DIC-Global" id="l2-DIC-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">DIC</span></a></li>
+
+								<li><a href="#l2-pH-Global" id="l2-pH-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">pH</span></a></li>
+
+								<li><a href="#l2-Alkalinity-Global" id="l2-Alkalinity-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Alkalinity</span></a></li>
+
+								<li><a href="#l2-Oxygen-Global" id="l2-Oxygen-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Oxygen</span></a></li>
+
+								<li><a href="#l2-Chlorophyll_cci-Global" id="l2-Chlorophyll_cci-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Chlorophyll (CCI)</span></a></li>
+
+								<li><a href="#l2-IntegratedPrimaryProduction_OSU-Global" id="l2-IntegratedPrimaryProduction_OSU-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Integrated Primary Production (OSU)</span></a></li>
+
+								<li><a href="#l2-AirSeaFluxCO2-Global" id="l2-AirSeaFluxCO2-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Air Sea CO2 Flux</span></a></li>
+
+								<li><a href="#l2-Dust-Global" id="l2-Dust-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Dust</span></a></li>
+
+								<li><a href="#l2-Temperature-Global" id="l2-Temperature-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Temperature</span></a></li>
+
+								<li><a href="#l2-Salinity-Global" id="l2-Salinity-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Salinity</span></a></li>
+
+								<li><a href="#l2-MLD-Global" id="l2-MLD-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Mixed Layer Depth</span></a></li>
+
+								<li><a href="#l2-ZonalCurrent-Global" id="l2-ZonalCurrent-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Zonal Current</span></a></li>
+
+								<li><a href="#l2-MeridionalCurrent-Global" id="l2-MeridionalCurrent-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Meridional Current</span></a></li>
+
+								<li><a href="#l2-VerticalCurrent-Global" id="l2-VerticalCurrent-Global-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Vertical Current</span></a></li>
+
+								</ul>
+
+							  <li><a href="#regionMap_default" id="regionMap_default-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Legends</span></a></li>
+
+								<ul>
+
+								<li><a href="#regionMap_default" id="regionMap_default-link" class="skel-layers-ignoreHref"><span class="icon fa-square">Regional and Transect Legends</span></a></li>
+
+								</ul>
+								
+								<!-- AddSideBar -->								
+
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to Top</span></a></li>								
+								
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons 
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					-->
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt"><strong>UKESM Biogeochemical Validation suite</strong> <br /></h2>
+
+								<p> An scaling mobile-friendly HTML5 plot viewer.</p>
+
+							<p>Validation of the job: u-bc179, in the year: 2010</p>
+								<!-- HeaderDescription -->										
+<p>The plots shown here are:
+<ul>
+<!--      <li>Hovmoeller: A set of four depth slices showing model, data, difference between them and the quotient. </li>     -->
+     <li>Level 0: A summary table showing the current state of the run.
+     <li>Level 1: Time series analysis.
+     <li>Level 2: Model vs Data maps and transects.
+     <li>Level 3: Custom analysis plots.
+<!--     <li>Time Series: A time series of the distribution of the model vs data. </li>
+     <li>Profiles: A time series of the distribution of the model vs data, coving a range of depths. </li>
+     <li>Maps: A set of four maps showing the model, data, difference between them and the quotient. </li>
+     <li>Interpolated Map: A set of four maps interpolated to and even 1 degree grid, showing the model, data, difference between them and the quotient. </li> -->
+</ul>
+</p>    
+<!-- 
+<p>Special EGU 2017 disclaimer:
+<ul>
+	<li> All plots and images shown below are property of UKESM, 
+	<li> preliminary, subject to change, and a work in progress.
+	<li> Please do not download or republish anything here without explicit permission.
+</ul>
+</p>								
+-->
+								<p> Plots and html5 shown here were produced by the <a href="https://gitlab.ecosystem-modelling.pml.ac.uk/UKESM/bgc-val">BGC-Val suite</a>.</p>
+
+                                                                <p> Ask questions and get news <a href="https://twitter.com/LeedeMora">@LeedeMora</a>.</p>
+
+							</header>
+
+	
+						</div>
+					</section>
+
+			<!-- ------------------------------------------------------------------------------------- -->										
+			
+
+
+					<section id=level0-table class="two">
+
+						<div class="container">
+
+							<header> <h2>Level 0</h2> </header>
+
+							<p>A set of metrics to describe the state of the run.</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+<TABLE class="default">
+ <TR>
+  <TH>Property</TH>
+  <TH>Model</TH>
+  <TH>Data</TH>
+ </TR>
+ <TR>
+  <TD align="left">Total Integrated Primary Production</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">Target: 40-60 Gt/yr</TD>
+ </TR>
+ <TR>
+  <TD align="left">Export Ratio</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">Target: 0.15 - 0.25 </TD>
+ </TR>
+ <TR>
+  <TD align="left">Total Air Sea CO2 Flux</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">Target: -0.1 - 0.1 Pg C/yr</TD>
+ </TR>
+ <TR>
+  <TD align="left">Nitrate Global Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol N/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Nitrate Southern Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol N/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Nitrate Atlantic S. Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol N/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Silicate Global Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol Si/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Silicate Southern Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol Si/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Silicate Atlantic S. Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol Si/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">DIC Global Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol C/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">DIC Southern Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol C/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">DIC Atlantic S. Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> mmol C/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Alkalinity Global Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> meq/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Alkalinity Southern Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> meq/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Alkalinity Atlantic S. Ocean Surface mean</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> meq/m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Total Oxygen minimum zone volume (<20 mmol O2/m^3)</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center"> m&#179;</TD>
+ </TR>
+ <TR>
+  <TD align="left">AMOC 26N</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">Target: 10-20 Sv</TD>
+ </TR>
+ <TR>
+  <TD align="left">Drake Passage Transport</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">136.7 	&#177; 7.8  Sv</TD>
+ </TR>
+ <TR>
+  <TD align="left">Northern Hemisphere Ice Extent</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">14.9 	&#177; 0.3 x 1E6 km&#178;</TD>
+ </TR>
+ <TR>
+  <TD align="left">Southern Hemisphere Ice Extent</TD>
+  <TD align="center">&nbsp;</TD>
+  <TD align="center">19.8 	&#177; 0.6 x 1E6 km&#178;</TD>
+ </TR>
+</TABLE>
+							<!--TabCaption -->
+
+														
+<p><br><b>Nitrate</b>: The data was taken from: World Ocean Atlas<br><b>Silicate</b>: The data was taken from: World Ocean Atlas<br><b>DIC</b>: The data was taken from: GLODAP</p>
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1TotalIntegratedPrimaryProduction-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Total Integrated Primary Production</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Total <br> Integrated Primary Production</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_TotalIntegratedPrimaryProduction_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_TotalIntegratedPrimaryProduction_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1ExportRatio-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Export Ratio</h2> </header>
+
+							<p>Note that there is no historic data set for this variable.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1AirSeaFluxCO2-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Air Sea CO2 Flux</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Total Air Sea CO2 Flux</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_TotalAirSeaFluxCO2_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_TotalAirSeaFluxCO2_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Nitrate-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Nitrate</h2> </header>
+
+							<p>Note that MEDUSA uses Dissolved Inorganic Nitrogen (DIN) rather than nitrate. We assume that non-nitrate parts of DIN are of relatively minor importance and so assume that WOA nitrate is comparable to model DIN.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1DIC-global class="two">
+
+						<div class="container">
+
+							<header> <h2>DIC</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, DIC, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_DIC_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_DIC_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1pH-global class="two">
+
+						<div class="container">
+
+							<header> <h2>pH</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Alkalinity-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Alkalinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, <br> Alkalinity, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Alkalinity_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Alkalinity_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Chlorophyll-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Chlorophyll</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Global, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Global, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, <br> Chlorophyll, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Chlorophyll_cci-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Chlorophyll (CCI)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1DiaFrac-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Diatom Fraction</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1TotalDust-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Total Dust</h2> </header>
+
+							<p>This field has the Mediterranean, Red, Caspian, Black and Baltic seas excluded in both the model and data.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1TotalOMZVolume-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Total Oxygen minimum zone volume (<20 mmol O2/m^3)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Total Oxygen minimum <br> zone volume (<20 mmol O2/m^3)</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_TotalOMZVolume_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_TotalOMZVolume_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Temperature-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Temperature</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, <br> Temperature, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1GlobalMeanTemperature-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Volume-weighted Mean Temperature</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Global Volume-weighted <br> Mean Temperature, 2000</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_GlobalMeanTemperature_2000_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_GlobalMeanTemperature_2000_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Global Volume-weighted <br> Mean Temperature, 700</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_GlobalMeanTemperature_700_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_GlobalMeanTemperature_700_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Global <br> Volume-weighted Mean Temperature</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_GlobalMeanTemperature_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_GlobalMeanTemperature_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1IcelessMeanSST-global class="two">
+
+						<div class="container">
+
+							<header> <h2>IcelessMeanSST</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1Salinity-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Salinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1GlobalMeanSalinity-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Volume-weighted Mean Salinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Global <br> Volume-weighted Mean Salinity</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_GlobalMeanSalinity_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_GlobalMeanSalinity_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1TotalIceArea-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Total Ice Area</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1TotalIceExtent-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Total Ice Extent</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Northern Hemisphere Ice Extent</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_NorthernTotalIceExtent_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_NorthernTotalIceExtent_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Southern Hemisphere Ice Extent</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_SouthernTotalIceExtent_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_SouthernTotalIceExtent_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Total Ice Extent</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_TotalIceExtent_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_TotalIceExtent_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1DrakePassageTransport-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Drake Passage Transport</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, Drake Passage Transport</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_DrakePassageTransport_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_DrakePassageTransport_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1AMOC_26N-global class="two">
+
+						<div class="container">
+
+							<header> <h2>AMOC 26N</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>u-bc179, AMOC, 26N</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/metricless_u-bc179_AMOC_26N_regionless_layerless_metricless.png">
+
+										    <img class="image fit" src="./images/metricless_u-bc179_AMOC_26N_regionless_layerless_metricless.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1ADRC_26N-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Atlantic Deep Return Current at 26N</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1ZonalCurrent-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Zonal Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1MeridionalCurrent-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Meridional Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1VerticalCurrent-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Vertical Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1MLD-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Mixed Layer Depth</h2> </header>
+
+							<p>Note that the Model MLD is calculated with based on a sigma_0 difference of 0.01 with the surface where as data uses as 			sigma_0 difference of +/- 0.2 degrees from a depth on 10m.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Mixed Layer Depth, Global</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_MLD_Global_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_MLD_Global_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1MaxMonthlyMLD-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Annual Maximum Mixed Layer Depth</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1MinMonthlyMLD-global class="two">
+
+						<div class="container">
+
+							<header> <h2>Annual Minimum Mixed Layer Depth</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionAirSeaFluxCO2 class="two">
+
+						<div class="container">
+
+							<header> <h2>Air Sea CO2 Flux</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea CO2 <br> Flux, Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea CO2 <br> Flux, Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea CO2 <br> Flux, Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea <br> CO2 Flux, Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Air Sea CO2 <br> Flux, No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_AirSeaFluxCO2_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_AirSeaFluxCO2_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionNitrate class="two">
+
+						<div class="container">
+
+							<header> <h2>Nitrate</h2> </header>
+
+							<p>Note that MEDUSA uses Dissolved Inorganic Nitrogen (DIN) rather than nitrate. We assume that non-nitrate parts of DIN are of relatively minor importance and so assume that WOA nitrate is comparable to model DIN.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Nitrate, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Nitrate_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Nitrate_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionSilicate class="two">
+
+						<div class="container">
+
+							<header> <h2>Silicate</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Silicate, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Silicate_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Silicate_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionIron class="two">
+
+						<div class="container">
+
+							<header> <h2>Iron</h2> </header>
+
+							<p>Note that there is no suitable historic data set for this variable.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Iron, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Iron_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Iron_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionIntegratedPrimaryProduction_OSU class="two">
+
+						<div class="container">
+
+							<header> <h2>Integrated Primary Production (OSU)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary <br> Production, (OSU), Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary <br> Production, (OSU), Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary Production, <br> (OSU), Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary Production, <br> (OSU), Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary Production, <br> (OSU), Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary <br> Production, (OSU), Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary <br> Production, (OSU), Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary <br> Production, (OSU), Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Integrated Primary Production, <br> (OSU), No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_IntegratedPrimaryProduction_OSU_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionChlorophyll class="two">
+
+						<div class="container">
+
+							<header> <h2>Chlorophyll</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Global, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Global, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, <br> Chlorophyll, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Southern Ocean, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_SouthernOcean_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_SouthernOcean_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Southern Ocean, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_SouthernOcean_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_SouthernOcean_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Atlantic <br> S. Ocean, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Atlantic <br> S. Ocean, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Northern <br> Subpolar Atlantic, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Northern <br> Subpolar Atlantic, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Northern <br> Subpolar Pacific, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, Northern <br> Subpolar Pacific, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Equator (+/-10), 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Equator10_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Equator10_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Equator (+/-10), 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Equator10_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Equator10_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Arctic Ocean, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ArcticOcean_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ArcticOcean_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Arctic Ocean, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ArcticOcean_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ArcticOcean_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Oligotrophic Gyres, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Remainder_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Remainder_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Oligotrophic Gyres, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Remainder_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Remainder_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, No <br> Inland Seas, 100m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_100m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_100m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, No <br> Inland Seas, 200m deep</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_200m_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_200m_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Chlorophyll, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Chlorophyll_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionChlorophyll_cci class="two">
+
+						<div class="container">
+
+							<header> <h2>Chlorophyll (CCI)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionpH class="two">
+
+						<div class="container">
+
+							<header> <h2>pH</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, pH, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_pH_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_pH_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionDiaFrac class="two">
+
+						<div class="container">
+
+							<header> <h2>Diatom Fraction</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionDust class="two">
+
+						<div class="container">
+
+							<header> <h2>Dust</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Global</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_Global_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_Global_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Southern Ocean</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_SouthernOcean_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_SouthernOcean_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Atlantic S. Ocean</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_AtlanticSOcean_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_AtlanticSOcean_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, <br> Northern Subpolar Atlantic</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_NorthernSubpolarAtlantic_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_NorthernSubpolarAtlantic_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, <br> Northern Subpolar Pacific</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_NorthernSubpolarPacific_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_NorthernSubpolarPacific_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Equator (+/-10)</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_Equator10_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_Equator10_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Arctic Ocean</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_ArcticOcean_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_ArcticOcean_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, Oligotrophic Gyres</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_Remainder_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_Remainder_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Dust, No Inland Seas</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Dust_ignoreInlandSeas_layerless_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Dust_ignoreInlandSeas_layerless_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionOMZThickness class="two">
+
+						<div class="container">
+
+							<header> <h2>Oxygen minimum zone thickness (<20 mmol O2/m^3)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionOMZMeanDepth class="two">
+
+						<div class="container">
+
+							<header> <h2>Oxygen minimum zone mean depth (<20 mmol O2/m^3)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionTemperature class="two">
+
+						<div class="container">
+
+							<header> <h2>Temperature</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, <br> Temperature, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Temperature, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Temperature_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Temperature_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionSalinity class="two">
+
+						<div class="container">
+
+							<header> <h2>Salinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, Global, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_Global_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_Global_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Southern Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_SouthernOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_SouthernOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Atlantic S. Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_AtlanticSOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_AtlanticSOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Northern Subpolar Atlantic, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_NorthernSubpolarAtlantic_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Northern Subpolar Pacific, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_NorthernSubpolarPacific_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_NorthernSubpolarPacific_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Equator (+/-10), Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_Equator10_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_Equator10_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Arctic Ocean, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_ArcticOcean_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_ArcticOcean_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> Oligotrophic Gyres, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_Remainder_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_Remainder_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>mean, u-bc179, Salinity, <br> No Inland Seas, Surface</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/mean_u-bc179_Salinity_ignoreInlandSeas_Surface_mean.png">
+
+										    <img class="image fit" src="./images/mean_u-bc179_Salinity_ignoreInlandSeas_Surface_mean.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionZonalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Zonal Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionMeridionalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Meridional Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionVerticalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Vertical Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionMaxMonthlyMLD class="two">
+
+						<div class="container">
+
+							<header> <h2>Annual Maximum Mixed Layer Depth</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1regionMinMonthlyMLD class="two">
+
+						<div class="container">
+
+							<header> <h2>Annual Minimum Mixed Layer Depth</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Nitrate class="two">
+
+						<div class="container">
+
+							<header> <h2>Nitrate</h2> </header>
+
+							<p>Note that MEDUSA uses Dissolved Inorganic Nitrogen (DIN) rather than nitrate. We assume that non-nitrate parts of DIN are of relatively minor importance and so assume that WOA nitrate is comparable to model DIN.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Silicate class="two">
+
+						<div class="container">
+
+							<header> <h2>Silicate</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Iron class="two">
+
+						<div class="container">
+
+							<header> <h2>Iron</h2> </header>
+
+							<p>Note that there is no suitable historic data set for this variable.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-DIC class="two">
+
+						<div class="container">
+
+							<header> <h2>DIC</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Chlorophyll class="two">
+
+						<div class="container">
+
+							<header> <h2>Chlorophyll</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-pH class="two">
+
+						<div class="container">
+
+							<header> <h2>pH</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Alkalinity class="two">
+
+						<div class="container">
+
+							<header> <h2>Alkalinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Oxygen class="two">
+
+						<div class="container">
+
+							<header> <h2>Oxygen</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Temperature class="two">
+
+						<div class="container">
+
+							<header> <h2>Temperature</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-Salinity class="two">
+
+						<div class="container">
+
+							<header> <h2>Salinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-ZonalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Zonal Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-MeridionalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Meridional Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=L1profile-VerticalCurrent class="two">
+
+						<div class="container">
+
+							<header> <h2>Vertical Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Nitrate-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Nitrate</h2> </header>
+
+							<p>Note that MEDUSA uses Dissolved Inorganic Nitrogen (DIN) rather than nitrate. We assume that non-nitrate parts of DIN are of relatively minor importance and so assume that WOA nitrate is comparable to model DIN.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Silicate-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Silicate</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-DIC-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global DIC</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-pH-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global pH</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Alkalinity-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Alkalinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Oxygen-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Oxygen</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Chlorophyll_cci-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Chlorophyll (CCI)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-IntegratedPrimaryProduction_OSU-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Integrated Primary Production (OSU)</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-AirSeaFluxCO2-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Air Sea CO2 Flux</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Dust-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Dust</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Temperature-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Temperature</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-Salinity-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Salinity</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-MLD-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Mixed Layer Depth</h2> </header>
+
+							<p>Note that the Model MLD is calculated with based on a sigma_0 difference of 0.01 with the surface where as data uses as 			sigma_0 difference of +/- 0.2 degrees from a depth on 10m.
+</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-ZonalCurrent-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Zonal Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-MeridionalCurrent-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Meridional Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=l2-VerticalCurrent-Global class="two">
+
+						<div class="container">
+
+							<header> <h2>Global Vertical Current</h2> </header>
+
+							<p></p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+
+
+					<section id=regionMap_default class="two">
+
+						<div class="container">
+
+							<header> <h2>Regional and Transect Legends</h2> </header>
+
+							<p>Maps showing the boundaries of the regions and transects used in this report.</p>
+
+							<div class="row">
+
+
+
+							<!--Tables -->
+
+
+
+							<!--TabCaption -->
+
+														
+
+							<!--Figures -->
+
+							
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>Region Legend</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/RegionLegend.png">
+
+										    <img class="image fit" src="./images/RegionLegend.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>Region, Legend, NorthAtlantic</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/Region_Legend_NorthAtlantic.png">
+
+										    <img class="image fit" src="./images/Region_Legend_NorthAtlantic.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>Transects Legend</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/TransectsLegend.png">
+
+										    <img class="image fit" src="./images/TransectsLegend.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+								<div class="4u 12u$(mobile)">
+
+									<article class="item">
+
+									    <header><h3>Transects Legend</h3></header>
+
+ 									    <div class="image">									
+
+										  <a target="_blank" href="./images/TransectsLegendBoth.png">
+
+										    <img class="image fit" src="./images/TransectsLegendBoth.png">
+
+										  </a>
+
+									    </div>
+
+									</article>
+
+								</div>
+
+
+
+							
+
+							</div>							
+
+						</div>
+
+					</section>
+			
+			<!-- AddSectionHere -->										
+
+					
+					
+			</div>
+
+
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Made by <a href="mailto:ledm@pml.ac.uk">Lee de Mora</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
