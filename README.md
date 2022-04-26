@@ -20,3 +20,11 @@ For each of the repos here, open:
 ### Initial Run (see issue [comment](https://github.com/valeriupredoi/bgc-val/issues/4#issuecomment-1108353175))
 
 https://htmlpreview.github.io/?https://github.com/valeriupredoi/reports-bgc-val/blob/main/bgc-val-initial-report/u-bc179/index.html
+
+### `level2` run for u-bc179
+
+- cwd: `/home/users/valeriu/bgc-val`
+- command run analysis: `./analysis_timeseries.py u-bc179 level2`
+- command run page generation: `python makeReport.py u-bc179 2010`
+
+https://htmlpreview.github.io/?https://github.com/valeriupredoi/reports-bgc-val/blob/main/bgc-val-level2-report/u-bc179/index.html
